@@ -3,7 +3,6 @@
 Install dependencies:
 ```
 npm install
-npm install mongodb --save
 ```
 
 Install Mongodb service. In OSX:
@@ -23,7 +22,16 @@ node app.js
 
 Open Postman to try a couple of requests:
 
-1. Get a new JWT token:
+1. Register a new user
+```
+Method: POST
+URL: http://localhost:8000/register
+Body params (x-www-form-urlencoded)
+  name: demo
+  password: demo
+```
+
+2. Get a new JWT token sending the user credentials:
 ```
 Method: POST
 URL: http://localhost:8000/authenticate
@@ -41,7 +49,7 @@ Example response:
 }
 ```
 
-2. Access a private endpoint:
+2. Access a private endpoint sending a valid JWT token:
 ```
 Method: GET
 URL: http://localhost:8000/private
@@ -58,7 +66,7 @@ Example response:
 }
 ```
 
-3. Get all results (private endpoint as well).
+3. Get users data (private endpoint as well).
 ```
 Method: GET
 URL: http://localhost:8000/
