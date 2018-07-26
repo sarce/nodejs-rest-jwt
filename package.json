@@ -12,6 +12,8 @@
     "express": "^4.13.4",
     "jwt-simple": "^0.5.0",
     "moment": "latest",
-    "body-parser": "latest"
+    "body-parser": "latest",
+    "mongoose": "latest",
+    "mongodb": "latest"
   }
 }

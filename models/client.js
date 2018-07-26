@@ -1,4 +1,4 @@
-var Schema = require('../../mongoose/lib').Schema;
+var Schema = require('mongoose').Schema;
 var modelSchema = Schema({
 	name: String,
 	password: String,
