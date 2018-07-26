@@ -49,7 +49,7 @@ Example response:
 }
 ```
 
-2. Access a private endpoint sending a valid JWT token:
+3. Access a private endpoint sending a valid JWT token:
 ```
 Method: GET
 URL: http://localhost:8000/private
@@ -66,7 +66,7 @@ Example response:
 }
 ```
 
-3. Get users data (private endpoint as well).
+4. Get users data (private endpoint as well).
 ```
 Method: GET
 URL: http://localhost:8000/
